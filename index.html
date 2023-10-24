@@ -1,0 +1,187 @@
+<!DOCTYPE html><!---->
+<html lang="pt-br"><!---->
+<head><!---->
+    <meta charset="UTF-8"><!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---->
+    <link rel="stylesheet" href="style.css"><!---->
+    <title> Matematica do 9 ano (Equação do 2 grau) </title><!---->
+</head><!---->
+
+<header>
+     <h1>Equação Do 2 Grau </h1>
+</header>
+
+<aside><!---->
+    Este EP se trata de um ensinamento do conteúdo de Equação Do 2 grau, suas principais informações são: 
+    <li> Raízes </li><!---->
+    <li> Discriminantes </li><!---->
+    <li> Gráficos </li><!---->
+    <li> Fatoração </li><!---->
+    <li> Aplicações </li><!---->
+    <li> Métodos Alternativos </li><!---->
+</aside><!---->
+
+<main>
+    <body onload="inclui_nome()"><!---->
+
+          <script src="script.js"></script><!---->
+
+          <p id="marcacao_nome"></p><!---->
+
+          <img src=""><!---->
+          <img src=""><!---->
+
+        <form><!---->
+            <ol><!---->
+                <li><!---->
+                    <ul><!---->
+                        <h2>Questão 1. Qual é a fórmula geral para encontrar as raízes de uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!---->
+                        <li><input type="radio" name="quest_1" value=""> x = (-b ± √(b^2 - 4ac)) / (2a) </li><!---->
+                        <li><input type="radio" name="quest_1" value=""> x = (2a ± √(b^2 - 4ac)) / (-b) </li><!---->
+                        <li><input type="radio" name="quest_1" value=""> x = (-c ± √(b^2 - 4ac)) / (2b) </li><!---->
+                        <li><input type="radio" name="quest_1" value=""> x = (-b ± √(b^2 - 4ac)) / (2a) </li><!---->
+                        <p id="resp_correta_1" class="verde"></p><!---->
+                        <p id="resp_errada_1" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 2. Qual é o discriminante em uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!---->
+                        <li><input type="radio" name="quest_2" value=""> Discriminante = 2ac - b^2 </li><!---->
+                        <li><input type="radio" name="quest_2" value=""> Discriminante = b^2 - 4ac </li><!---->
+                        <li><input type="radio" name="quest_2" value=""> Discriminante = a + b + c </li><!---->
+                        <li><input type="radio" name="quest_2" value=""> Discriminante = 4ac + b^2 </li><!---->
+                        <p id="resp_correta_2" class="verde"></p><!---->
+                        <p id="resp_errada_2" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 3. Quantas soluções reais uma equação do segundo grau pode ter ? </h2><!---->
+                        <li><input type="radio" name="quest_3" value=""> 0 soluções </li><!---->
+                        <li><input type="radio" name="quest_3" value=""> 1 solução </li><!---->
+                        <li><input type="radio" name="quest_3" value=""> 2 soluções </li><!---->
+                        <li><input type="radio" name="quest_3" value=""> Infinitas soluções </li><!---->
+                        <p id="resp_correta_3" class="verde"></p><!---->
+                        <p id="resp_errada_3" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 4. Qual é a condição para que uma equação do segundo grau tenha soluções reais ? </h2><!---->
+                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser maior que zero (Δ > 0). </li><!---->
+                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser menor que zero (Δ < 0). </li><!---->
+                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser igual a zero (Δ = 0). </li><!---->
+                        <li><input type="radio" name="quest_4" value=""> O discriminante não afeta as soluções reais. </li><!---->
+                        <p id="resp_correta_4" class="verde"></p><!---->
+                        <p id="resp_errada_4" class="vermelho"></p><!---->
+                    </ul>                      
+
+                    <ul><!---->
+                        <h2>Questão 5. Se o discriminante de uma equação do segundo grau for igual a zero, quantas soluções reais ela possui ? </h2><!---->
+                        <li><input type="radio" name="quest_5" value=""> 0 soluções </li><!---->
+                        <li><input type="radio" name="quest_5" value=""> 1 solução </li><!---->
+                        <li><input type="radio" name="quest_5" value=""> 2 soluções </li><!---->
+                        <li><input type="radio" name="quest_5" value=""> Infinitas soluções </li><!---->
+                        <p id="resp_correta_5" class="verde"></p><!---->
+                        <p id="resp_errada_5" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 6. Qual é a forma da solução da equação do segundo grau quando o discriminante é maior que zero (Δ > 0) ? </h2><!---->
+                        <li><input type="radio" name="quest_6" value=""> Duas raizes reais diferentes </li><!---->
+                        <li><input type="radio" name="quest_6" value=""> Nenhuma raiz real </li><!---->
+                        <li><input type="radio" name="quest_6" value=""> Uma raiz real e uma raiz complexa </li><!---->
+                        <li><input type="radio" name="quest_6" value=""> Uma unica raiz real </li><!---->
+                        <p id="resp_correta_6" class="verde"></p><!---->
+                        <p id="resp_errada_6" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 7. Qual é a forma da solução da equação do segundo grau quando o discriminante é igual a zero (Δ = 0) ? </h2><!---->
+                        <li><input type="radio" name="quest_7" value=""> Duas raizes reais diferentes </li><!---->
+                        <li><input type="radio" name="quest_7" value=""> Nenhuma raiz real </li><!---->
+                        <li><input type="radio" name="quest_7" value=""> Uma raiz real e uma raiz complexa </li><!---->
+                        <li><input type="radio" name="quest_7" value=""> Uma única raiz real </li><!---->
+                        <p id="resp_correta_7" class="verde"></p><!---->
+                        <p id="resp_errada_7" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 8. Qual é a forma da solução da equação do segundo grau quando o discriminante é menor que zero (Δ < 0) ? </h2><!---->
+                        <li><input type="radio" name="quest_8" value=""> Duas raizes reais diferentes </li><!---->
+                        <li><input type="radio" name="quest_8" value=""> Nenhuma raiz real </li><!---->
+                        <li><input type="radio" name="quest_8" value=""> Uma raiz real e uma raiz complexa </li><!---->
+                        <li><input type="radio" name="quest_8" value=""> Uma única raiz real </li><!---->
+                        <p id="resp_correta_8" class="verde"></p><!---->
+                        <p id="resp_errada_8" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 9. Qual é a relação entre as raízes de uma equação do segundo grau e os coeficientes a, b e c na fórmula geral ? </h2><!---->
+                        <li><input type="radio" name="quest_9" value=""> As raízes são iguais aos coeficientes </li><!---->
+                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a c e diretamente proporcionais a a </li><!---->
+                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a b e diretamente proporcionais a a </li><!---->
+                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a a e diretamente proporcionais a b </li><!---->
+                        <p id="resp_correta_9" class="verde"></p><!---->
+                        <p id="resp_errada_9" class="vermelho"></p><!---->
+                    </ul><!---->
+
+                    <ul><!---->
+                        <h2>Questão 10. Qual é a fórmula para encontrar uma das raízes de uma equação do segundo grau usando a fórmula quadrática ? </h2><!---->
+                        <li><input type="radio" name="quest_10" value=""> x = -b / (2a) </li><!---->
+                        <li><input type="radio" name="quest_10" value=""> x = (-b + √(b^2 - 4ac)) / (2a) </li><!---->
+                        <li><input type="radio" name="quest_10" value=""> x = -c / (2b) </li><!---->
+                        <li><input type="radio" name="quest_10" value=""> x = a / (2c) </li><!---->
+                        <p id="resp_correta_10" class="verde"></p><!---->
+                        <p id="resp_errada_10" class="vermelho"></p><!---->
+                    </ul><!---->
+                </li><!---->
+            </ol><!---->
+
+            <p id="quantos_acertos"></p>
+                <button type="button" onclick="funcao_resposta()">Responder</button><!---->
+
+        </form><!---->
+    
+        <form id="equationForm"><!---->
+            <p>1. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
+            <label for="coefA">a: </label><!---->
+            <input type="number" id="coefA" name="coefA"></br><!---->
+            <label for="coefB">b: </label><!---->
+            <input type="number" id="coefB" name="coefB"></br><!---->
+            <label for="coefC">c: </label><!---->
+            <input type="number" id="coefC" name="coefC"></br><!---->
+            <button type="button" id="solveEquation">Resolver</button><!---->
+            <p id="result"></p><!---->
+        </form><!---->
+            
+        <form id="equationForm"><!---->
+            <p>2. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
+            <label for="coefA">a: </label><!---->
+            <input type="number" id="coefA" name="coefA"></br><!---->
+            <label for="coefB">b: </label><!---->
+            <input type="number" id="coefB" name="coefB"></br><!---->
+            <label for="coefC">c: </label><!---->
+            <input type="number" id="coefC" name="coefC"></br><!---->
+            <button type="button" id="solveEquation">Resolver</button><!---->
+            <p id="result"></p><!---->
+        </form><!---->
+
+        <form id="equationForm"><!---->
+            <p>3. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
+            <label for="coefA">a: </label><!---->
+            <input type="number" id="coefA" name="coefA"></br><!---->
+            <label for="coefB">b: </label><!---->
+            <input type="number" id="coefB" name="coefB"></br><!---->
+            <label for="coefC">c: </label><!---->
+            <input type="number" id="coefC" name="coefC"></br><!---->
+            <button type="button" id="solveEquation">Resolver</button><!---->
+            <p id="result"></p><!---->
+        </form><!---->
+     
+    </body><!---->
+</main><!---->
+
+<footer><!---->
+    desenvolved by Bianca Torres and Mariah Eggers @2023 
+</footer><!---->
+
+</html><!---->
