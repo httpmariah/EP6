@@ -1,187 +1,186 @@
-<!DOCTYPE html><!---->
-<html lang="pt-br"><!---->
-<head><!---->
-    <meta charset="UTF-8"><!---->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!---->
-    <link rel="stylesheet" href="style.css"><!---->
-    <title> Matematica do 9 ano (Equação do 2 grau) </title><!---->
-</head><!---->
+<!DOCTYPE html><!--é uma instrução para o navegador da web que diz em qual versão do html a página é escrita-->
+<html lang="pt-br"><!--ajuda a definir o idioma do elemento-->
+<head><!--contem info.não transportadas para o usuário do doc.-->
+    <meta charset="UTF-8"><!--define o conj. de caracteres a ser utilizado na exibição do conteúdo de um site-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--leva o usuário á um novo URL-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--controla como um site é exibido em um dispositivo móvel-->
+    <link rel="stylesheet" href="style.css"><!--linka o CSS ao HTML-->
+    <link href='https://fonts.googleapis.com/css?family=EB Garamond' rel='stylesheet'><!--link da fonte utilizada no site-->
+    <title> Matemática do 9º ano (Equação do 2 grau) </title><!--é o título do documento-->
+</head><!--contem info.não transportadas para o usuário do doc.-->
 
-<header>
-     <h1>Equação Do 2 Grau </h1>
-</header>
+<body onload="inclui_nome()"><!---->
 
-<aside><!---->
-    Este EP se trata de um ensinamento do conteúdo de Equação Do 2 grau, suas principais informações são: 
-    <li> Raízes </li><!---->
-    <li> Discriminantes </li><!---->
-    <li> Gráficos </li><!---->
-    <li> Fatoração </li><!---->
-    <li> Aplicações </li><!---->
-    <li> Métodos Alternativos </li><!---->
-</aside><!---->
+<header><!--representa um grupo de suporte navegacional-->
+    <h1>Equation.Func</h1>
+</header><!--representa um grupo de suporte navegacional-->
 
-<main>
-    <body onload="inclui_nome()"><!---->
+<aside><!--define um bloco de conteúdo principal que o cerca, pode estar ou não em uma barra lateral(sidebar)-->
+    <a href="teoria.html">Teoria Da Equação Do 2 Grau</a><!--é usado para víncular uma página á outra, utilizando o atributo "href"-->
+</aside><!--define um bloco de conteúdo principal que o cerca, pode estar ou não em uma barra lateral(sidebar)-->
 
-          <script src="script.js"></script><!---->
+<main><!--define o conteúdo principal dentro do body em seu doc.-->
 
-          <p id="marcacao_nome"></p><!---->
+    <a onmouseover="mudar('equacao','equacao1.png')"
+    onmouseout="mudar('equacao','equacao2.png')">
+    <img src="equacao1.png" alt="" id="equacao"></a><!---->
 
-          <img src=""><!---->
-          <img src=""><!---->
+        <script src="script.js"></script><!---->
 
-        <form><!---->
-            <ol><!---->
-                <li><!---->
-                    <ul><!---->
-                        <h2>Questão 1. Qual é a fórmula geral para encontrar as raízes de uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!---->
-                        <li><input type="radio" name="quest_1" value=""> x = (-b ± √(b^2 - 4ac)) / (2a) </li><!---->
-                        <li><input type="radio" name="quest_1" value=""> x = (2a ± √(b^2 - 4ac)) / (-b) </li><!---->
-                        <li><input type="radio" name="quest_1" value=""> x = (-c ± √(b^2 - 4ac)) / (2b) </li><!---->
-                        <li><input type="radio" name="quest_1" value=""> x = (-b ± √(b^2 - 4ac)) / (2a) </li><!---->
+        <p id="marcacao_nome"></p><!---->
+
+        <form><!--indica um formulário-->
+            <ol><!--indica uma lista de itens ordenados-->
+                <li><!--indica um item na lista-->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 1. Qual é a fórmula geral para encontrar as raízes de uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_1" value="errada"> x = (-b ± √(b^2 - 4ac)) / (2c) </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_1" value="errada"> x = (2a ± √(b^2 - 4ac)) / (-b)</li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_1" value="errada"> x = (-c ± √(b^2 - 4ac)) / (2b)</li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_1" value="correta"> x = (-b ± √(b^2 - 4ac)) / (2a)</li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_1" class="verde"></p><!---->
                         <p id="resp_errada_1" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 2. Qual é o discriminante em uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!---->
-                        <li><input type="radio" name="quest_2" value=""> Discriminante = 2ac - b^2 </li><!---->
-                        <li><input type="radio" name="quest_2" value=""> Discriminante = b^2 - 4ac </li><!---->
-                        <li><input type="radio" name="quest_2" value=""> Discriminante = a + b + c </li><!---->
-                        <li><input type="radio" name="quest_2" value=""> Discriminante = 4ac + b^2 </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 2. Qual é o discriminante em uma equação do segundo grau, ax^2 + bx + c = 0 ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_2" value="errada"> Discriminante = 2ac - b^2 </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_2" value="correta"> Discriminante = b^2 - 4ac </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_2" value="errada"> Discriminante = a + b + c </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_2" value="errada"> Discriminante = 4ac + b^2 </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_2" class="verde"></p><!---->
                         <p id="resp_errada_2" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 3. Quantas soluções reais uma equação do segundo grau pode ter ? </h2><!---->
-                        <li><input type="radio" name="quest_3" value=""> 0 soluções </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> 1 solução </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> 2 soluções </li><!---->
-                        <li><input type="radio" name="quest_3" value=""> Infinitas soluções </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 3. Quantas soluções reais uma equação do segundo grau pode ter ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_3" value="errada"> 6 soluções </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_3" value="errada"> 9 solução </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_3" value="correta">0, 1 e 2 soluções </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_3" value="errada"> Finitas soluções </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_3" class="verde"></p><!---->
                         <p id="resp_errada_3" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 4. Qual é a condição para que uma equação do segundo grau tenha soluções reais ? </h2><!---->
-                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser maior que zero (Δ > 0). </li><!---->
-                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser menor que zero (Δ < 0). </li><!---->
-                        <li><input type="radio" name="quest_4" value=""> O discriminante deve ser igual a zero (Δ = 0). </li><!---->
-                        <li><input type="radio" name="quest_4" value=""> O discriminante não afeta as soluções reais. </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 4. Qual é a condição para que uma equação do segundo grau tenha soluções reais ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_4" value="correta"> O discriminante deve ser maior que zero (Δ > 0). </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_4" value="errada"> O discriminante deve ser menor que zero (Δ < 0). </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_4" value="errada"> O discriminante deve ser igual a zero (Δ = 0). </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_4" value="errada"> O discriminante não afeta as soluções reais. </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_4" class="verde"></p><!---->
                         <p id="resp_errada_4" class="vermelho"></p><!---->
-                    </ul>                      
-
-                    <ul><!---->
-                        <h2>Questão 5. Se o discriminante de uma equação do segundo grau for igual a zero, quantas soluções reais ela possui ? </h2><!---->
-                        <li><input type="radio" name="quest_5" value=""> 0 soluções </li><!---->
-                        <li><input type="radio" name="quest_5" value=""> 1 solução </li><!---->
-                        <li><input type="radio" name="quest_5" value=""> 2 soluções </li><!---->
-                        <li><input type="radio" name="quest_5" value=""> Infinitas soluções </li><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->                   
+                    
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 5. Se o discriminante de uma equação do segundo grau for igual a zero, quantas soluções reais ela possui ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_5" value="errada"> 0 soluções </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_5" value="correta"> 1 solução </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_5" value="errada"> 2 soluções </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_5" value="errada"> Infinitas soluções </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_5" class="verde"></p><!---->
                         <p id="resp_errada_5" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 6. Qual é a forma da solução da equação do segundo grau quando o discriminante é maior que zero (Δ > 0) ? </h2><!---->
-                        <li><input type="radio" name="quest_6" value=""> Duas raizes reais diferentes </li><!---->
-                        <li><input type="radio" name="quest_6" value=""> Nenhuma raiz real </li><!---->
-                        <li><input type="radio" name="quest_6" value=""> Uma raiz real e uma raiz complexa </li><!---->
-                        <li><input type="radio" name="quest_6" value=""> Uma unica raiz real </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 6. Qual é a forma da solução da equação do segundo grau quando o discriminante é maior que zero (Δ > 0) ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_6" value="correta"> Duas raizes reais diferentes </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_6" value="errada"> Nenhuma raiz real </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_6" value="errada"> Uma raiz real e uma raiz complexa </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_6" value="errada"> Uma unica raiz real </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_6" class="verde"></p><!---->
                         <p id="resp_errada_6" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 7. Qual é a forma da solução da equação do segundo grau quando o discriminante é igual a zero (Δ = 0) ? </h2><!---->
-                        <li><input type="radio" name="quest_7" value=""> Duas raizes reais diferentes </li><!---->
-                        <li><input type="radio" name="quest_7" value=""> Nenhuma raiz real </li><!---->
-                        <li><input type="radio" name="quest_7" value=""> Uma raiz real e uma raiz complexa </li><!---->
-                        <li><input type="radio" name="quest_7" value=""> Uma única raiz real </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 7. Qual é a forma da solução da equação do segundo grau quando o discriminante é igual a zero (Δ = 0) ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_7" value="errada"> Duas raizes reais diferentes </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_7" value="errada"> Nenhuma raiz real </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_7" value="errada"> Uma raiz real e uma raiz complexa </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_7" value="correta"> Uma única raiz real </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_7" class="verde"></p><!---->
                         <p id="resp_errada_7" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 8. Qual é a forma da solução da equação do segundo grau quando o discriminante é menor que zero (Δ < 0) ? </h2><!---->
-                        <li><input type="radio" name="quest_8" value=""> Duas raizes reais diferentes </li><!---->
-                        <li><input type="radio" name="quest_8" value=""> Nenhuma raiz real </li><!---->
-                        <li><input type="radio" name="quest_8" value=""> Uma raiz real e uma raiz complexa </li><!---->
-                        <li><input type="radio" name="quest_8" value=""> Uma única raiz real </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 8. Qual é a forma da solução da equação do segundo grau quando o discriminante é menor que zero (Δ < 0) ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_8" value="errada"> Duas raizes reais diferentes </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_8" value="correta"> Nenhuma raiz real </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_8" value="errada"> Uma raiz real e uma raiz complexa </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_8" value="errada"> Uma única raiz real </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_8" class="verde"></p><!---->
                         <p id="resp_errada_8" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 9. Qual é a relação entre as raízes de uma equação do segundo grau e os coeficientes a, b e c na fórmula geral ? </h2><!---->
-                        <li><input type="radio" name="quest_9" value=""> As raízes são iguais aos coeficientes </li><!---->
-                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a c e diretamente proporcionais a a </li><!---->
-                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a b e diretamente proporcionais a a </li><!---->
-                        <li><input type="radio" name="quest_9" value=""> As raízes são inversamente proporcionais a a e diretamente proporcionais a b </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 9. Qual é a relação entre as raízes de uma equação do segundo grau e os coeficientes a, b e c na fórmula geral ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_9" value="errada"> As raízes são iguais aos coeficientes </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_9" value="errada"> As raízes são inversamente proporcionais a c e diretamente proporcionais a a </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_9" value="errada"> As raízes são inversamente proporcionais a b e diretamente proporcionais a a </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_9" value="correta"> As raízes são inversamente proporcionais a a e diretamente proporcionais a b </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_9" class="verde"></p><!---->
                         <p id="resp_errada_9" class="vermelho"></p><!---->
-                    </ul><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
 
-                    <ul><!---->
-                        <h2>Questão 10. Qual é a fórmula para encontrar uma das raízes de uma equação do segundo grau usando a fórmula quadrática ? </h2><!---->
-                        <li><input type="radio" name="quest_10" value=""> x = -b / (2a) </li><!---->
-                        <li><input type="radio" name="quest_10" value=""> x = (-b + √(b^2 - 4ac)) / (2a) </li><!---->
-                        <li><input type="radio" name="quest_10" value=""> x = -c / (2b) </li><!---->
-                        <li><input type="radio" name="quest_10" value=""> x = a / (2c) </li><!---->
+                    <ul><!--indica uma lista de itens não ordenados-->
+                        <h2>Questão 10. Qual é a fórmula para encontrar uma das raízes de uma equação do segundo grau usando a fórmula quadrática ? </h2><!--subtítulo-->
+                        <li><input type="radio" name="quest_10" value="errada"> x = -b / (2a) </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_10" value="correta"> x = (-b + √(b^2 - 4ac)) / (2a) </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_10" value="errada"> x = -c / (2b) </li><!--cria um elemento de entrada em um formulário web-->
+                        <li><input type="radio" name="quest_10" value="errada"> x = a / (2c) </li><!--cria um elemento de entrada em um formulário web-->
                         <p id="resp_correta_10" class="verde"></p><!---->
                         <p id="resp_errada_10" class="vermelho"></p><!---->
-                    </ul><!---->
-                </li><!---->
-            </ol><!---->
+                    </ul><!--indica uma lista de itens não ordenados-->
+                </li><!--indica um item na lista-->
+            </ol><!--indica uma lista de itens ordenados-->
 
-            <p id="quantos_acertos"></p>
-                <button type="button" onclick="funcao_resposta()">Responder</button><!---->
+            <p id="quantos_acertos"></p><!---->
+                <button type="button" onclick="funcao_resposta()">Responder</button><!--indica um botão-->
 
-        </form><!---->
+        </form><!--indica um formulário-->
     
-        <form id="equationForm"><!---->
-            <p>1. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
-            <label for="coefA">a: </label><!---->
-            <input type="number" id="coefA" name="coefA"></br><!---->
-            <label for="coefB">b: </label><!---->
-            <input type="number" id="coefB" name="coefB"></br><!---->
-            <label for="coefC">c: </label><!---->
-            <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation">Resolver</button><!---->
-            <p id="result"></p><!---->
-        </form><!---->
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>1. insira os coeficientes da equação: ax^2 + bx + c = 0</h2><!--subtítulo-->
+            <label for="coefA1">a: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefA1" name="coefA1"></br>
+            <label for="coefB1">b: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefB1" name="coefB1"></br>
+            <label for="coefC1">c: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefC1" name="coefC1"></br>
+            <button type="button" id="solveEquation" onclick="verificarRespostas()">Resolver</button><!--indica um botão-->
+            <p id="result1">resultado</p><!--nome do botão-->
+        </form><!--indica um formulário-->
             
-        <form id="equationForm"><!---->
-            <p>2. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
-            <label for="coefA">a: </label><!---->
-            <input type="number" id="coefA" name="coefA"></br><!---->
-            <label for="coefB">b: </label><!---->
-            <input type="number" id="coefB" name="coefB"></br><!---->
-            <label for="coefC">c: </label><!---->
-            <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation">Resolver</button><!---->
-            <p id="result"></p><!---->
-        </form><!---->
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>2. Resolver a equação de segundo grau: 2x^2 + 5x - 3 = 0</h2><!--subtítulo-->
+            <label for="coefA2">a: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefA2" name="coefA2"><br>
+            <label for="coefB2">b: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefB2" name="coefB2"><br>
+            <label for="coefC2">c: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefC2" name="coefC2"><br>
+            <button type="button" id="solveEquation" onclick="verificarRespostas()">Resolver</button><!--indica um botão-->
+            <p id="result2">resultado</p><!--nome do botão-->
+        </form><!--indica um formulário-->
+        
+        <form id="equationForm"><!--indica um formulário-->
+            <h2>3. Insira os coeficientes da equação: 2x^2 - 5x + 3 = 0</h2><!--subtítulo-->
+            <label for="coefA">a: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefA" name="coefA"></br>
+            <label for="coefB">b: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefB" name="coefB"></br>
+            <label for="coefC">c: </label><!--cria rótulos descritivos em formulários -->
+            <input type="number" id="coefC" name="coefC"></br>
+            <button type="button" id="solveEquation" onclick="verificarRespostas()">Resolver</button><!--indica um botão-->
+            <p id="result3"></p><!--nome do botão-->
+        </form><!--indica um formulário-->
 
-        <form id="equationForm"><!---->
-            <p>3. insira os coeficientes da equação: ax^2 + bx + c = 0</p><!---->
-            <label for="coefA">a: </label><!---->
-            <input type="number" id="coefA" name="coefA"></br><!---->
-            <label for="coefB">b: </label><!---->
-            <input type="number" id="coefB" name="coefB"></br><!---->
-            <label for="coefC">c: </label><!---->
-            <input type="number" id="coefC" name="coefC"></br><!---->
-            <button type="button" id="solveEquation">Resolver</button><!---->
-            <p id="result"></p><!---->
-        </form><!---->
-     
-    </body><!---->
-</main><!---->
+</main><!--define o conteúdo principal dentro do body em seu doc.-->
 
-<footer><!---->
-    desenvolved by Bianca Torres and Mariah Eggers @2023 
-</footer><!---->
+<footer><!--é o rodapé do site-->
+    Desenvolved by Bianca Torres and Mariah Eggers @2023 
+</footer><!--é o rodapé do site-->
 
-</html><!---->
+</body><!--é o corpo da página-->
+
+</html><!--informa o navegador que tipo de estrutura está sendo construída-->

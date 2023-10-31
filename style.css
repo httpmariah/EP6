@@ -1,77 +1,182 @@
-.verde{
-    color: green;
+* {
+    font-family: 'EB Garamond'; /* Define a fonte para todos os elementos da página */
 }
 
-.vermelho{
-    color: red;
+.verde {
+    color: green; /* Define a cor verde para elementos com a classe "verde" */
 }
 
-header{
-    font-size: 40px;
-    grid-area: cabe;
-    background-color: rgb(83, 171, 212);
-    border-radius: 20px;
+.vermelho {
+    color: red; /* Define a cor vermelha para elementos com a classe "vermelho" */
 }
 
-aside{
-    grid-area: brac;
-    background-color: rgb(101, 170, 202);
-    border-radius: 20px;
+li {
+    list-style: none; /* Remove os marcadores de lista de todos os elementos <li> */
 }
 
-main{
-    grid-area: princ;
-    background-color: rgb(101, 170, 202);
-    border-radius: 20px;
+header {
+    font-size: 50px; /* Define o tamanho da fonte para o cabeçalho */
+    grid-area: cabe; /* Define a área do grid para o cabeçalho */
+    background-color: rgb(255, 244, 244); /* Define a cor de fundo */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    border: solid black 3px; /* Define uma borda sólida preta com 3px */
+    text-align: center; /* Alinha o texto ao centro */
+    font-style: garamond; /* Define o estilo da fonte como Garamond */
 }
 
-footer{
-    grid-area: roda;
-    background-color: rgb(83, 171, 212);
-    border-radius: 20px;
+aside {
+    grid-area: brac; /* Define a área do grid para a barra lateral "aside" */
+    background-color: rgb(255, 244, 244); /* Define a cor de fundo */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    border: solid black 3px; /* Define uma borda sólida preta com 3px */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Adiciona um preenchimento de 20px */
+    align-items: center; /* Alinha os itens ao centro */
+    font-style: garamond; /* Define o estilo da fonte como Garamond */
 }
 
-body{
-    display: grid;
+a {
+    color: palevioletred; /* Define a cor do link */
+    text-decoration: none; /* Remove a decoração do link (sublinhado) */
+}
+
+label {
+    font-family: 'EB Garamond'; /* Define a fonte para rótulos */
+    font-size: 22px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+input {
+    align-content: center; /* Alinha o conteúdo ao centro (não é um atributo CSS válido) */
+    border: solid 3px rgb(255, 213, 213); /* Define uma borda sólida com 3px e uma cor específica */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    margin: 3px; /* Define a margem de 3px */
+    align-items: center; /* Alinha os itens ao centro (não é um atributo CSS válido) */
+    font-family: 'EB Garamond'; /* Define a fonte */
+    font-size: 22px; /* Define o tamanho da fonte */
+    text-align: center; /* Alinha o texto ao centro */
+}
+
+/*CÓDIGO DO MAIN*/
+
+main {
+    grid-area: princ; /* Define a área do grid para o conteúdo principal "main" */
+    margin: auto; /* Centraliza o conteúdo principal horizontalmente */
+    background-color: rgb(255, 244, 244); /* Define a cor de fundo */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    border: solid black 3px; /* Define uma borda sólida preta com 3px */
+    text-align: justify; /* Alinha o texto justificado */
+    align-items: justify; /* Alinha os itens ao justificado (não é um atributo CSS válido) */
+    font-family: 'EB Garamond'; /* Define a fonte */
+}
+
+form {
+    margin: 40px; /* Define uma margem de 40px para os formulários */
+} 
+/*CÓDIGO DO FOOTER*/
+
+footer {
+    grid-area: roda; /* Define a área do grid para o rodapé "footer" */
+    background-color: rgb(255, 244, 244); /* Define a cor de fundo */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    border: solid black 3px; /* Define uma borda sólida preta com 3px */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 30px; /* Adiciona um preenchimento de 30px */
+    font-style: garamond; /* Define o estilo da fonte como Garamond */
+}
+
+/*CÓDIGO DO BODY*/
+
+body {
+    background-color: rgb(240, 194, 194); /* Define a cor de fundo do corpo da página */
+    display: grid; /* Define um layout de grid para o corpo da página */
     grid-template-areas: 
-    "cabe" "cabe"
-    "brac" "brac"
-    "princ" "princ"
-    "roda" "roda"
-    ;
-    grid-template-rows:100%;
-    grid-auto-columns: 100% ;
+    "cabe cabe" 
+    "brac brac" 
+    "princ princ" 
+    "roda roda"; 
+    /* Define a estrutura de áreas do grid */
+
+    grid-gap: 10px; /* Define o espaço entre as células do grid */
+    grid-template-columns: auto auto; /* Define as colunas do grid */
+    grid-template-rows: auto auto; /* Define as linhas do grid */
 }
 
-@media only screen and (max-width:820px){
-    body{
-        grid-template-areas:
-        "cabe"
-        "brac"
-        "pric"
-        "roda";
-        grid-template-columns: 1fr;
-        grid-template-rows: 200px 50px 500px 200px;
-    }
+button {
+    margin: 20px; /* Define uma margem de 20px para os botões */
+    background-color: rgb(255, 213, 213); /* Define a cor de fundo */
+    color: white; /* Define a cor do texto como branco */
+    font-style: bold; /* Define o estilo da fonte como negrito (não é um atributo CSS válido) */
+    font-family: 'EB Garamond'; /* Define a fonte */
+    font-size: 20px; /* Define o tamanho da fonte */
+    border-radius: 30px; /* Define o raio de borda arredondada */
+    border: solid white 3px; /* Define uma borda sólida branca com 3px */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.075); /* Adiciona uma sombra ao botão */
+    transition: all ease-in-out .1s; /* Define uma transição suave */
 }
 
-@media only screen and (max-width:480px){
-    body{
+button:hover {
+    transform: scale(1.1); /* Faz o botão aumentar de tamanho ao passar o mouse sobre ele */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.075); /* Muda a sombra ao passar o mouse sobre o botão */
+}
+
+/*CÓDIGO DA RESPONSIVIDADE*/
+
+@media only screen and (max-width: 820px) {
+    body {
         grid-template-areas: 
-        "secn"
-        "prin"
-        "roda";
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px 500px 100px;
-    }
+        "cabe" 
+        "brac" 
+        "pric" 
+        "roda"; 
+        /* Layout responsivo para larguras de tela menores */
 
-    aside{
-        display: none;
+        grid-template-columns: 1fr; /* Uma única coluna */
+        grid-template-rows: 200px 50px 500px 200px; /* Alturas das linhas */
     }
-
-    header{
-        display: none;
-    }
-
-    
 }
+
+@media only screen and (max-width: 480px) {
+    header{
+        font-size: 10px;
+    }
+    body {
+        font-size: 7px;
+        grid-template-areas: 
+        "secn" 
+        "prin" 
+        "roda"; 
+        /* Layout responsivo para larguras de tela muito pequenas */
+
+        grid-template-columns: 1fr; /* Uma única coluna */
+        grid-template-rows: 100px 500px 100px; /* Alturas das linhas */
+    }
+
+    aside {
+        display: none; /* Oculta a barra lateral em telas muito pequenas */
+    }
+
+    header {
+        display: none; /* Oculta o cabeçalho em telas muito pequenas */
+    }
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .item {
+      flex: 0 0 calc(100% - 20px);
+    }
+  }
